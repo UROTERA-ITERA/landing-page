@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import Gallery from './components/Gallery'
 import logo from '../public/urotera.png'
+import headerBg from '../public/header.jpg'
 
 function App() {
   useEffect(() => {
@@ -58,9 +59,17 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 pt-32">
-        <div className="max-w-5xl mx-auto text-center">
+      {/* Hero Section with Header Background */}
+      <section 
+        className="min-h-screen flex flex-col justify-center items-center px-6 py-20 pt-32 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(26, 29, 32, 0.85), rgba(26, 29, 32, 0.85)), url(${headerBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight font-display"
             data-aos="fade-up"
@@ -251,7 +260,7 @@ function App() {
           >
             <p>&copy; 2025 UROTERA Community. All rights reserved.</p>
           </div>
-        </div>
+      </div>
       </footer>
     </div>
   )
