@@ -164,7 +164,7 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold text-robot-yellow-500 mb-4 font-display">RoboHub</h3>
+              <h3 className="text-xl font-bold text-robot-yellow-500 mb-4 font-display">UROTERA</h3>
               <p className="text-robot-gray-400">
                 Building the future of robotics, one community member at a time.
               </p>
@@ -198,7 +198,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-robot-gray-700 pt-8 text-center text-robot-gray-400">
-            <p>&copy; 2025 RoboHub Community. All rights reserved.</p>
+            <p>&copy; 2025 UROTERA Community. All rights reserved.</p>
           </div>
       </div>
       </footer>
